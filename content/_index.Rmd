@@ -4,6 +4,7 @@ title: "Contratos y decretos"
 
 ## Hola mundo
 
-```{r cool-plot, fig.cap='A cool plot.'}
-plot(cars, pch = 20)  # not really cool
+```{r}
+library(tabler)
+tabler(sheetId="15XG38ZOhy9-ZpLPS8dz2OVqk-6QtH2ikPC58Dh87rzM")
 ```
