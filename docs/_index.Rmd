@@ -1,9 +1,0 @@
----
-title: "Contratos y decretos"
----
-
-## Hola mundo
-
-```{r cool-plot, fig.cap='A cool plot.'}
-plot(cars, pch = 20)  # not really cool
-```

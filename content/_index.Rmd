@@ -2,9 +2,16 @@
 title: "Contratos y decretos"
 ---
 
-## Hola mundo
-
-```{r}
+```{r message = FALSE, echo = FALSE}
 library(tabler)
-tabler(sheetId="15XG38ZOhy9-ZpLPS8dz2OVqk-6QtH2ikPC58Dh87rzM")
+tabler(sheetId="15XG38ZOhy9-ZpLPS8dz2OVqk-6QtH2ikPC58Dh87rzM",
+       width = "100%",
+       rowsByPage = 20,
+       search=list(
+         enable = TRUE,
+         placeholder = "Ingresar palabra clave"
+       ),
+       filters=list(
+         list(label="Buscar por Decreto", field="Decreto")
+       ))
 ```
