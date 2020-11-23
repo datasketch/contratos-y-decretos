@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
 <head>
+  <base href="{{.Site.BaseURL}}">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {{ $styles := resources.Get "styles/tailwind.pcss" | toCSS | postCSS | minify }}

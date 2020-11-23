@@ -6,6 +6,7 @@ title: "Contratos y decretos"
 library(tabler)
 tabler(sheetId="15XG38ZOhy9-ZpLPS8dz2OVqk-6QtH2ikPC58Dh87rzM",
        width = "100%",
+       height = "auto",
        rowsByPage = 20,
        search=list(
          enable = TRUE,

@@ -3,6 +3,7 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
+  important: '.ds-tabler__table',
   purge: [],
   theme: {
     extend: {

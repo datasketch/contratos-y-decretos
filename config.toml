@@ -1,4 +1,5 @@
 baseURL = "https://datasketch.github.io/contratos-y-decretos/"
+# baseURL = "/contratos-y-decretos/"
 languageCode = "es-es"
 title = "Contratos y Decretos"
 taxonomies = []
