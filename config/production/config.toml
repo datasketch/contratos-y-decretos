@@ -1,5 +1,4 @@
-baseURL = "https://datasketch.github.io/contratos-y-decretos/"
+baseURL = "https://cuestionpublica.com/contratos-y-decretos/"
 languageCode = "es-es"
 title = "Contratos y Decretos"
 taxonomies = []
-publishDir = "docs"
