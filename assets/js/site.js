@@ -5,6 +5,17 @@ const nextPage = document.getElementById('next-page');
 const prevPage = document.getElementById('prev-page');
 const search = document.getElementById('search');
 
+const imageMapper = {
+  amarillo:
+    'https://res.cloudinary.com/randommonkey/image/upload/v1607717497/contratos-y-decretos/amarillo.png',
+  rojo:
+    'https://res.cloudinary.com/randommonkey/image/upload/v1607717505/contratos-y-decretos/rojo.png',
+  verde:
+    'https://res.cloudinary.com/randommonkey/image/upload/v1607717495/contratos-y-decretos/verde.png',
+  naranja:
+    'https://res.cloudinary.com/randommonkey/image/upload/v1607717489/contratos-y-decretos/naranja.png',
+};
+
 function registerListeners(table, params) {
   download.addEventListener('click', function () {
     table.download('csv', 'contratos-y-decretos.csv');
@@ -71,12 +82,23 @@ function createColumnsFilter(columns) {
 
 function renderTable(response) {
   const { headers, data } = response;
-  const columns = headers.map((header) => ({
-    title: header,
-    field: header,
-    minWidth: 100,
-    visible: true,
-  }));
+  const columns = headers.map((header) => {
+    const columnDef = {
+      title: header,
+      field: header,
+      minWidth: 100,
+      visible: true,
+    };
+    if (header === 'Semaforo' || header === 'Semáforo') {
+      return Object.assign(columnDef, {
+        formatter: function (cell) {
+          const imageUrl = imageMapper[cell.getValue().toLowerCase()];
+          return `<img class="h-8 mx-auto" src="${imageUrl}">`;
+        },
+      });
+    }
+    return columnDef;
+  });
   const options = {
     columns,
     data,
