@@ -1,3 +1,4 @@
+const columnsFilter = document.getElementById('columns-filter');
 const container = document.getElementById('table');
 const download = document.getElementById('download');
 const nextPage = document.getElementById('next-page');
@@ -38,6 +39,34 @@ function registerListeners(table, params) {
       : null;
     searchFilters ? table.setFilter([searchFilters]) : table.clearFilter();
   });
+
+  columnsFilter.addEventListener('change', function (event) {
+    const column = event.target.value;
+    table.toggleColumn(column);
+  });
+}
+
+function createColumnsFilter(columns) {
+  columns.forEach((column) => {
+    const id = column.field.toLowerCase().replace(/\s/g, '_');
+    const checkbox = `
+      <div>
+        <input
+          id="${id}"
+          type="checkbox"
+          name="column"
+          class="hidden"
+          value="${column.field}"
+          ${column.visible && 'checked'}
+        >
+        <label for="${id}" class="flex items-center space-x-1 select-none cursor-pointer">
+          <span>${column.title}</span>
+          <span class="column-indicator"></span>
+        </label>
+      </div>
+    `;
+    columnsFilter.innerHTML += checkbox;
+  });
 }
 
 function renderTable(response) {
@@ -46,6 +75,7 @@ function renderTable(response) {
     title: header,
     field: header,
     minWidth: 100,
+    visible: true,
   }));
   const options = {
     columns,
@@ -56,13 +86,14 @@ function renderTable(response) {
   };
   const table = new Tabulator(container, options);
   const maxPages = table.getPageMax();
+  createColumnsFilter(columns);
   registerListeners(table, { maxPages, searchFields: headers });
 }
 
 function main() {
   const reader = new GSheetReader();
   const sheetId = '15XG38ZOhy9-ZpLPS8dz2OVqk-6QtH2ikPC58Dh87rzM';
-  reader.getJSON(sheetId).then(renderTable);
+  reader.getJSON(sheetId).then(renderTable).catch(console.log);
 }
 
 main();
