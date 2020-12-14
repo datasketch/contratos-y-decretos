@@ -1,123 +1,13 @@
-<!DOCTYPE html>
-<html lang="es-es">
-<head>
-	<meta name="generator" content="Hugo 0.78.2" />
-  <base href="https://datasketch.github.io/contratos-y-decretos/">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<link rel="stylesheet" href="https://datasketch.github.io/contratos-y-decretos/vendors/tabulator/tabulator_simple.min.css">
-
-  
-  <link rel="stylesheet" href="https://datasketch.github.io/contratos-y-decretos/styles/tailwind.min.css">
-  
-    <title>Inicio -  Contratos y Decretos</title>
-  
-  
-</head>
-<body class="antialiased font-lato">
-  <main>
-    
-<section class="bg-charcoal bg-contain bg-center bg-repeat-y px-4 py-16 text-white" style="background-image: url(https://datasketch.github.io/contratos-y-decretos/media/cp.png);">
-  <div class="w-full mx-auto md:w-10/12">
-    <img class="w-64 md:w-1/2 lg:w-1/3 mx-auto" src="https://datasketch.github.io/contratos-y-decretos/media/logo_slqh.png" alt="">
-    <div class="max-w-sm md:max-w-md mx-auto">
-      <div class="bg-tiryan-purple text-center transform -skew-x-12">
-        <p class="text-xl md:text-2xl font-black transform skew-x-12">#dequédecretomehablasviejo</p>
-      </div>
-      <p class="font-semibold text-xl md:text-2xl text-center leading-none mt-2">Alertas de corrupción en los decretos presidenciales.</p>
-    </div>
-    <div class="mt-10">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse totam, reiciendis, ipsa laudantium debitis facilis nam repudiandae maxime quo doloribus soluta suscipit, eos hic ad quam? Rem totam aspernatur commodi vitae earum aperiam, nam quidem debitis recusandae natus dolorem minus, minima quas. Eveniet magnam inventore totam et, facere veniam quod officiis, vel dolorem, ratione quis delectus expedita optio deserunt amet. Consequuntur sequi explicabo corporis eaque natus? Soluta ipsam aut veritatis dicta pariatur, nostrum quaerat velit! Beatae sed rerum dolor perspiciatis illo, dolores corporis, inventore excepturi eum molestias natus sunt asperiores ipsam nihil sequi sapiente debitis consequatur dolore eligendi pariatur quis expedita, possimus nostrum. Excepturi similique hic ad voluptas ex sequi sapiente impedit voluptates blanditiis deleniti accusantium rerum delectus illum aliquid, aperiam veniam fuga corporis sint ea explicabo quod. Voluptatem cupiditate autem nesciunt commodi a odit, corporis blanditiis beatae unde nemo ducimus non, natus nam impedit, atque architecto accusantium rerum ullam?</p>
-    </div>
-  </div>
-</section>
-<div>
-  <div class="py-2 flex items-start space-x-4 px-4">
-    <img class="w-6" src="https://datasketch.github.io/contratos-y-decretos/media/lupa.png" alt="">
-    <input type="text" placeholder="Ingresa palabra clave" id="search">
-  </div>
-  <div id="table">
-  </div>
-  <div class="bg-gray-200 px-4 py-3 flex flex-wrap justify-center items-center space-x-3 max-w-7xl mx-auto" id="columns-filter"></div>
-  <div class="bg-tiryan-purple px-4 flex items-center" id="pagination">
-    <div class="hidden md:block md:w-1/3"></div>
-    <div class="flex space-x-6 justify-center w-1/2 md:w-1/3">
-      <button class="focus:outline-none flex items-center text-white font-bold py-2" id="prev-page" disabled>
-        <img class="w-8" src="https://datasketch.github.io/contratos-y-decretos/media/chevron.png" alt="">
-        <span>Anterior</span>
-      </button>
-      <button class="focus:outline-none flex items-center text-white font-bold py-2" id="next-page">
-        <span>Siguiente</span>
-        <img class="w-8 transform rotate-180" src="https://datasketch.github.io/contratos-y-decretos/media/chevron.png" alt="">
-      </button>
-    </div>
-    <div class="text-right w-1/2 md:w-1/3">
-      <button class="bg-white px-2 py-1 rounded-lg text-tiryan-purple font-bold" id="download">Descargar</button>
-    </div>
-  </div>
-</div>
-
-  </main>
-  <footer>
-  <div class="bg-charcoal px-4 py-12 bg-center bg-contain bg-repeat-y text-white md:bg-no-repeat" style="background-image: url(https://datasketch.github.io/contratos-y-decretos/media/cp.png);">
-    <p class="font-black text-xl text-center">Con el apoyo de:</p>
-    <div class="grid grid-cols-1 gap-y-12 mt-12 md:grid-cols-3">
-      <div class="font-black text-center text-lg flex flex-col items-center">
-        <p class="bg-tiryan-purple py-1 px-4 leading-none">Directora</p>
-        <div class="leading-tight mt-3">
-          <p>Diana Salinas</p>
-          <p class="font-normal">Líder en investigación</p>
-        </div>
-      </div>
-      <div class="font-black text-center text-lg flex flex-col items-center">
-        <p class="bg-tiryan-purple py-1 px-4 leading-none">Coordinadora</p>
-        <div class="leading-tight mt-3">
-          <p>Ingrid Ramírez</p>
-          <p class="font-normal">Periodista</p>
-        </div>
-      </div>
-      <div class="font-black text-center text-lg flex flex-col items-center lg:row-span-2">
-        <p class="bg-tiryan-purple py-1 px-4 leading-none">Investigadores</p>
-        <div class="leading-tight mt-3">
-          <img class="w-32" src="https://datasketch.github.io/contratos-y-decretos/media/logo_unisabana.png" alt="">
-          <p class="mt-2">Juan Oviedo</p>
-          <p class="font-normal">Periodista</p>
-        </div>
-      </div>
-      <div class="font-black text-center text-lg flex flex-col items-center">
-        <p class="bg-tiryan-purple py-1 px-4 leading-none">Diseño</p>
-        <div class="leading-tight mt-3">
-          <p>Heidy González</p>
-          <p class="font-normal">Diseñadora gráfica</p>
-        </div>
-      </div>
-      <div class="font-black text-center text-lg flex flex-col items-center">
-        <p class="bg-tiryan-purple py-1 px-4 leading-none">Desarrollo</p>
-        <div class="leading-tight mt-3">
-          <p>Datasketch</p>
-          <p class="font-normal">Desarrollo web y<br>visualizaciones</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-black p-4">
-    <div class="flex justify-center divide-x-2 divide-white -mx-4">
-      <div class="px-4">
-        <img class="w-40" src="https://datasketch.github.io/contratos-y-decretos/media/logo_cp.png" alt="">
-      </div>
-      <div class="px-4 text-white leading-tight text-sm flex flex-col justify-center">
-        <p class="text-red-crayola">&copy; Cuestión Pública 2020</p>
-        <p>Todos los derechos reservados</p>
-      </div>
-    </div>
-  </div>
-</footer>
-  
-<script src="https://datasketch.github.io/contratos-y-decretos/vendors/tabulator/tabulator.min.js"></script>
-<script src="https://datasketch.github.io/contratos-y-decretos/vendors/gsheetreader/gsheetreader.umd.js"></script>
-
-<script src="https://datasketch.github.io/contratos-y-decretos/js/site.min.js"></script>
-
-</body>
-</html>
+<!doctype html><html lang=es-es><head><meta name=generator content="Hugo 0.78.2"><base href=https://datasketch.github.io/contratos-y-decretos/><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=https://datasketch.github.io/contratos-y-decretos/vendors/tabulator/tabulator_simple.min.css><link rel=stylesheet href=https://datasketch.github.io/contratos-y-decretos/styles/tailwind.min.css><title>Contratos y Decretos</title></head><body class="antialiased font-lato"><main><div class="step px-4 bg-charcoal bg-fixed bg-contain bg-center bg-repeat-y text-white" style=background-image:url(https://datasketch.github.io/contratos-y-decretos/media/cp.png)><div id=wrapper class="sticky top-0 w-full h-screen"><div class="flex flex-col justify-center h-full"><img class="w-64 md:w-1/2 lg:w-1/3 mx-auto" src=https://datasketch.github.io/contratos-y-decretos/media/logo_slqh.png alt><div class="max-w-sm md:max-w-md mx-auto"><div class="bg-tiryan-purple text-center transform -skew-x-12"><p class="text-xl md:text-2xl font-black transform skew-x-12">#dequédecretomehablasviejo</p></div><p class="font-semibold text-xl md:text-4xl text-center leading-none mt-2">Alertas de corrupción en los decretos presidenciales.</p></div></div></div><div class="space-y-6 text-lg max-w-xl mx-auto md:text-xl py-16 relative"><p>Te hablamos de más de 100 decisiones gubernamentales que fueron tomadas por el presidente y su gabinete en la pandemia. Este boquete se abrió gracias a que en <a class="bg-tiryan-purple bg-opacity-75" href=https://coronaviruscolombia.gov.co/Covid-19/docs/decretos/general/51_Presidencia_Decreto_417.pdf target=_blank rel="noopener noreferrer">marzo</a> y <a class="bg-tiryan-purple bg-opacity-75" href=https://dapre.presidencia.gov.co/normativa/normativa/DECRETO%20637%20DEL%206%20DE%20MAYO%20DE%202020.pdf target=_blank rel="noopener noreferrer">mayo</a> fueron decretados dos Estados de Emergencia Económica, Social y Ecológica que, por su carácter constitucional, autorizaron a la presidencia para expedir decretos con fuerza de ley, sin tener que pasar por el Congreso.</p><p>En paralelo, el Gobierno nacional anunció que destinarían <a class="bg-tiryan-purple bg-opacity-75" href=https://id.presidencia.gov.co/Paginas/prensa/2020/Colombia-invierte-cerca-de-117-billones-de-pesos-para-atender-la-Emergencia-Economica-por-la-pandemia-del-covid-19-200527.aspx target=_blank rel="noopener noreferrer">$117 billones</a>, el 11,04% del PIB, para atender la crisis generada por el coronavirus, aunque realmente sólo se han dispuesto $41 billones en el Fondo de Mitigación de Emergencias (FOME) y hasta el 4 de diciembre tan sólo se han ejecutado efectivamente $14 billones según el <a class="bg-tiryan-purple bg-opacity-75" href=https://www.minhacienda.gov.co/webcenter/portal/MedidasCOVID19/pages_medidas-covid19 target=_blank rel="noopener noreferrer">Ministerio de Hacienda</a>. Además, estos gastos no se han reportado con <a class="bg-tiryan-purpl leading-nonee" href=https://www.ofiscal.org/post/nueva-revisi%C3%B3n-del-fome-y-los-mismos-viejos-problemas target=_blank rel="noopener noreferrer">transparencia</a>.</p><p>¿Cuántas y cuáles medidas de ley quedaron impuestas por el presidente y su gabinete en ese periodo?, ¿cómo se distribuyeron esos recursos a través del FOME? Con este trabajo de periodismo de datos planteamos una revisión a las medidas decretadas relacionadas con la emergencia, según nuestro asesor, con el fin de determinar si los superpoderes que se otorgó el presidente, a través del estado de emergencia, correspondieron con la mitigación y los efectos de la situación de pandemia en el país.</p><p>Por último, clasificamos las alertas por riesgos de corrupción por colores: rojo, alerta de riesgo grave; amarillo, alerta de riesgo medio; verde: sin riesgo. La mayoría de alertas están sujetas a la falta de transparencia en los decretos para conocer su ruta y saber realmente el destino e inversión de esos recursos. También describimos las razones de esas alertas. Puedes filtrar búsquedas según tu necesidad, para eso son los botones que encuentras abajo de la tabla. Sin embargo, si quieres puedes buscar por palabras, también hay una barra dispuesta para esto. Todos los resultados los puedes descargar.</p><p>Este espacio lo construimos en alianza con los estudiantes del Seminario de Datos de la Universidad de La Sabana, Juan David Oviedo, asesor e investigador de políticas públicas y el equipo de Cuestión Pública.</p><p class=text-center><a href=/contratos-y-decretos/metodologia/ class="bg-tiryan-purple inline-block px-2 py-1 rounded-lg">Metodología</a></p></div></div><div class=shadow-inner><div class="py-4 flex items-center space-x-4 px-4"><img class=w-6 src=https://datasketch.github.io/contratos-y-decretos/media/lupa.png alt>
+<input class="flex-grow focus:outline-none text-lg placeholder-tiryan-purple" type=text placeholder="Ingresa palabra clave" id=search></div><div id=table></div><div class="bg-gray-200 px-4 py-3"><p class="text-center text-tiryan-purple text-sm font-bold tracking-wide uppercase">Seleccionar columnas</p><div class="flex flex-col md:flex-row md:flex-wrap md:justify-center md:items-center md:space-x-3 max-w-7xl mx-auto mt-2" id=columns-filter></div></div><div class="bg-tiryan-purple px-4 flex items-center" id=pagination><div class="hidden md:block md:w-1/3"></div><div class="flex space-x-6 justify-center w-1/2 md:w-1/3"><button class="focus:outline-none flex items-center text-white font-bold py-2" id=prev-page disabled>
+<img class=w-8 src=https://datasketch.github.io/contratos-y-decretos/media/chevron.png alt>
+<span>Anterior</span></button>
+<button class="focus:outline-none flex items-center text-white font-bold py-2" id=next-page>
+<span>Siguiente</span>
+<img class="w-8 transform rotate-180" src=https://datasketch.github.io/contratos-y-decretos/media/chevron.png alt></button></div><div class="text-right w-1/2 md:w-1/3"><button class="bg-white px-2 py-1 rounded-lg text-tiryan-purple font-bold" id=download>Descargar</button></div></div></div></main><footer><div class="bg-charcoal px-4 py-12 bg-center bg-contain bg-repeat-y text-white md:bg-no-repeat" style=background-image:url(https://datasketch.github.io/contratos-y-decretos/media/cp.png)><p class="font-black text-xl text-center">Con el apoyo de:</p><div class="grid grid-cols-1 gap-y-12 mt-12 md:grid-cols-3"><div class="font-black text-center text-lg flex flex-col items-center"><p class="bg-tiryan-purple py-1 px-4 leading-none">Dirección</p><div class="leading-tight mt-3"><p>Diana Salinas
+<a href=https://twitter.com/DianaSalinasP target=_blank rel="noopener noreferrer" class=font-normal>(@DianaSalinasP)</a></p></div></div><div class="font-black text-center text-lg flex flex-col items-center"><p class="bg-tiryan-purple py-1 px-4 leading-none">Coordinación y Edición</p><div class="leading-tight mt-3"><p>Diana Salinas</p><p>Ingrid Ramírez Fuquen
+<a href=https://twitter.com/_iramir_ target=_blank rel="noopener noreferrer" class=font-normal>(@_iramir_)</a></p></div></div><div class="font-black text-center text-lg flex flex-col items-center"><p class="bg-tiryan-purple py-1 px-4 leading-none">Alertas de corrupción</p><div class="leading-tight mt-3"><p>Juan David Oviedo
+<a href=https://twitter.com/JuanOv13do target=_blank rel="noopener noreferrer" class=font-normal>(@JuanOv13do)</a></p><p class="font-normal text-sm mt-1">Asesor e Investigador de Políticas Públicas</p></div></div><div class="font-black text-center text-lg flex flex-col items-center"><p class="bg-tiryan-purple py-1 px-4 leading-none">Edición jurídica</p><div class="leading-tight mt-3"><p>Camilo Vallejo
+<a href=https://twitter.com/CamiloVallejoG target=_blank rel="noopener noreferrer" class=font-normal>(@CamiloVallejoG)</a></p></div></div><div class="font-black text-center text-lg flex flex-col items-center"><p class="bg-tiryan-purple py-1 px-4 leading-none">Diseño</p><div class="leading-tight mt-3"><p>Heidy González
+<a href=https://twitter.com/HeidyBlue9 target=_blank rel="noopener noreferrer" class=font-normal>(@HeidyBlue9)</a></p></div></div><div class="font-black text-center text-lg flex flex-col items-center"><p class="bg-tiryan-purple py-1 px-4 leading-none">Desarrollo web</p><div class="leading-tight mt-3"><p>Datasketch
+<a href=https://twitter.com/datasketch target=_blank rel="noopener noreferrer" class=font-normal>(@datasketch)</a></p></div></div><div class="font-black text-center text-lg flex flex-col items-center md:col-span-3"><p class="bg-tiryan-purple py-1 px-4 leading-none">Base de datos Decretos</p><div class="leading-tight mt-3 font-normal max-w-2xl mx-auto"><p>Estudiantes del Seminario de Datos de la Universidad de La Sabana,bajo el liderazgo de la profesora <a href=https://twitter.com/marisamagar class=font-black target=_blank rel="noopener noreferrer">María Isabel Magaña</a>:</p><ul class="mt-4 grid gap-2 md:grid-cols-2"><li>Jesus Steven Bernal Castro</li><li>Santiago Díaz Gamboa</li><li>Germán Andrés Enciso Florez</li><li>Diana Carolina Estupiñán Meneses</li><li>Sara Alejandra Forero Lesmes</li><li>Lauryn Jannieth García Castiblanco</li><li>Santiago González Barrera</li><li>Juan Diego López Piraquive</li><li>Valeria Marcoux Calle</li><li>Laura Valentina Mercado Hernández</li><li>Camila Andrea Mestra Correa</li><li>Magda Sofía Rodríguez Mendoza</li><li>María Valentina Serrano Jaime</li></ul></div></div></div></div><div class="bg-black p-4"><div class="flex justify-center divide-x-2 divide-white -mx-4"><div class=px-4><img class=w-40 src=https://datasketch.github.io/contratos-y-decretos/media/logo_cp.png alt></div><div class="px-4 text-white leading-tight text-sm flex flex-col justify-center"><p class=text-red-crayola>&copy; Cuestión Pública 2020</p><p>Todos los derechos reservados</p></div></div></div></footer><script src=https://datasketch.github.io/contratos-y-decretos/vendors/tabulator/tabulator.min.js></script><script src=https://datasketch.github.io/contratos-y-decretos/vendors/gsheetreader/gsheetreader.umd.js></script><script src=vendors/scrollama/scrollama.js></script><script src=https://datasketch.github.io/contratos-y-decretos/js/site.min.js integrity="sha512-pjJSHiQj+2g1BSjQauMA6eAtWTVPBwED441OVFZTOH2ymDRvWmWO6SRV7d2x6vYt+1+fHlfzTCRDbms/HMmerA=="></script></body></html>

@@ -39,5 +39,6 @@
 <script src="{{"vendors/gsheetreader/gsheetreader.umd.js"|absURL}}"></script>
 <script src="{{"vendors/scrollama/scrollama.js"}}"></script>
 {{ $script := resources.Get "js/site.js" | minify }}
-<script src="{{ $script.Permalink }}"></script>
+{{ $secure := $script | resources.Fingerprint "sha512" }}
+<script src="{{ $script.Permalink }}" integrity="{{$secure.Data.Integrity}}"></script>
 {{ end }}

@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Inicio on Contratos y Decretos</title>
-    <link>https://datasketch.github.io/contratos-y-decretos/</link>
-    <description>Recent content in Inicio on Contratos y Decretos</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>es-es</language><atom:link href="https://datasketch.github.io/contratos-y-decretos/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Contratos y Decretos</title><link>https://datasketch.github.io/contratos-y-decretos/</link><description>Recent content on Contratos y Decretos</description><generator>Hugo -- gohugo.io</generator><language>es-es</language><atom:link href="https://datasketch.github.io/contratos-y-decretos/index.xml" rel="self" type="application/rss+xml"/><item><title>Metodología</title><link>https://datasketch.github.io/contratos-y-decretos/metodologia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://datasketch.github.io/contratos-y-decretos/metodologia/</guid><description>¿De dónde salieron los datos? Se recopilaron 209 decretos provenientes de la Web oficial del Gobierno de Colombia para atender el Covid, donde están todos los documentos publicados en relación al Covid-19, y de la Web de Presidencia, donde se publican todos los decretos emitidos por el Ejecutivo. Se incluyeron únicamente los decretos publicados desde el 13 de marzo y hasta el 1 de octubre de 2020. Estos datos luego se cruzaron con los comunicados oficiales de la Corte Constitucional, donde esclarece su decisión tras analizar cada uno los decretos seleccionados.</description></item></channel></rss>
