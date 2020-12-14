@@ -29,11 +29,55 @@ button[disabled] {
 }
 
 .column-indicator {
-  @apply w-3 h-3 rounded-full bg-transparent border border-gray-700;
+  @apply w-4 h-4 rounded bg-transparent border border-gray-700;
 }
 
 input[type='checkbox']:checked + label .column-indicator {
-  @apply bg-red-crayola border-red-crayola;
+  @apply bg-tiryan-purple relative border-tiryan-purple;
+}
+
+input[type='checkbox']:checked + label .column-indicator:before {
+  content: '';
+  @apply absolute h-2 w-1 border-white border-b-2 border-r-2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.tabulator-col-content {
+  @apply text-tiryan-purple text-center font-black;
+}
+
+.tabulator-row:nth-child(2n) {
+  @apply bg-gray-100;
+}
+
+.tabulator-row {
+  border-bottom: none;
+}
+
+.tabulator-row .tabulator-cell {
+  border-right: none;
+}
+
+.tabulator-row .tabulator-cell {
+  @apply text-center;
+}
+
+.md-content {
+  @apply text-lg;
+}
+
+.md-content h2 {
+  @apply text-2xl font-semibold;
+}
+
+.md-content > * ~ * {
+  @apply mt-4;
+}
+
+.md-content a {
+  @apply text-tiryan-purple font-semibold;
 }
 
 @tailwind utilities;

@@ -1,5 +1,2 @@
 ---
-title: Inicio
 ---
-
-Hola mundo
