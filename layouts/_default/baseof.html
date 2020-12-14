@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {{ block "head" . }}{{ end }}
-  {{ $styles := resources.Get "styles/tailwind.pcss" | toCSS | postCSS | minify }}
+  {{ $styles := resources.Get "styles/styles.pcss" | toCSS | postCSS | minify }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}">
   {{ if .Title }}
     <title>{{ .Title }} -  {{ .Site.Title }}</title>
