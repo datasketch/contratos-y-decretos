@@ -38,7 +38,6 @@
 <script src="{{"vendors/tabulator/tabulator.min.js"|absURL}}"></script>
 <script src="{{"vendors/gsheetreader/gsheetreader.umd.js"|absURL}}"></script>
 <script src="{{"vendors/scrollama/scrollama.js"}}"></script>
-{{ $script := resources.Get "js/site.js" | minify }}
-{{ $secure := $script | resources.Fingerprint "sha512" }}
-<script src="{{ $script.Permalink }}" integrity="{{$secure.Data.Integrity}}"></script>
+{{ $script := resources.Get "js/home.js" | minify }}
+<script src="{{ $script.Permalink }}"></script>
 {{ end }}
