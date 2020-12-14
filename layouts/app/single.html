@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="shadow-inner">
+  <div class="py-4 flex items-center space-x-4 px-4">
+    <img class="w-6" src="{{"media/lupa.png"|absURL}}" alt="">
+    <input class="flex-grow focus:outline-none text-lg placeholder-tiryan-purple" type="text" placeholder="Ingresa palabra clave" id="search">
+  </div>
+  <div id="table">
+    <p class="text-center p-4">Cargando</p>
+  </div>
+  <div class="bg-tiryan-purple px-4 py-2 text-right" id="pagination">
+    <button class="bg-white px-2 py-1 rounded-lg text-tiryan-purple font-bold" id="download">Descargar</button>
+  </div>
+</div>
+{{ end }}
+
+{{ define "head" }}
+<link rel="stylesheet" href="{{"vendors/tabulator/tabulator_simple.min.css"|absURL}}">
+{{ end }}
+
+{{ define "scripts" }}
+<script src="{{"vendors/tabulator/tabulator.min.js"|absURL}}"></script>
+<script src="{{"vendors/gsheetreader/gsheetreader.umd.js"|absURL}}"></script>
+{{ $script := resources.Get "js/table.js" | minify }}
+<script src="{{ $script.Permalink }}"></script>
+{{ end }}
