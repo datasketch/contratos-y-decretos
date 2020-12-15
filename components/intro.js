@@ -18,10 +18,33 @@ function Intro() {
   }, []);
   return (
     <div
-      className="step px-4 bg-charcoal bg-fixed bg-contain bg-center bg-repeat-y text-white"
+      className="step bg-charcoal bg-fixed bg-contain bg-center bg-repeat-y text-white"
       style={{ backgroundImage: 'url(media/cp.png)' }}
     >
-      <div ref={wrapper} className="sticky top-0 w-full h-screen">
+      <div className="bg-red-crayola fixed inline-flex md:flex-col md:top-1/2 left-0 p-2 md:space-y-1 rounded-tr-md rounded-br-md transform md:-translate-y-1/2 z-10">
+        <a
+          href="https://www.facebook.com/cuestionp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="w-7" src="media/fb.png" alt="" />
+        </a>
+        <a
+          href="https://twitter.com/cuestion_p"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="w-7" src="media/tw.png" alt="" />
+        </a>
+        <a
+          href="https://www.instagram.com/cuestionp/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="w-7" src="media/ig.png" alt="" />
+        </a>
+      </div>
+      <div ref={wrapper} className="sticky top-0 w-full h-screen px-4">
         <div className="flex flex-col justify-center h-full">
           <img
             className="w-64 md:w-1/2 lg:w-1/3 mx-auto"
@@ -34,13 +57,13 @@ function Intro() {
                 #dequédecretomehablasviejo
               </p>
             </div>
-            <p className="font-semibold text-xl md:text-4xl text-center leading-none mt-2">
-              Alertas de riesgo de corrupción en los decretos presidenciales.
+            <p className="font-black text-xl md:text-4xl text-center leading-none mt-2">
+              Alertas de riesgo de corrupción en los decretos presidenciales
             </p>
           </div>
         </div>
       </div>
-      <div className="space-y-6 text-lg max-w-xl mx-auto md:text-xl py-16 relative">
+      <div className="space-y-6 text-lg max-w-xl mx-auto md:text-xl py-16 relative px-4 lg:text-2xl lg:max-w-2xl">
         <p>
           Te hablamos de más de 100 decisiones gubernamentales que fueron
           tomadas por el presidente y su gabinete en la pandemia. Este boquete

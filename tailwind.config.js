@@ -4,7 +4,7 @@ module.exports = {
     extend: {
       colors: {
         charcoal: '#434f5d',
-        'red-crayola': '#F52749',
+        'red-crayola': '#f52749',
         'tiryan-purple': '#550f3f',
       },
       fontFamily: {

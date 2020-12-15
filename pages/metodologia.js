@@ -66,8 +66,15 @@ function MethodologyPage() {
                 Magaña analizaron los 209 decretos, clasificando su contenido a
                 partir de variables preestablecidas. Para la publicación
                 filtramos más de 100 decretos cobijados exclusivamente por el
-                estado de emergencia, creando una base de datos única que puede
-                descargarse aquí.
+                estado de emergencia, creando una base de datos única que puede <a
+                  href="https://datawrapper.dwcdn.net/7n05y/4/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-tiryan-purple font-semibold"
+                >
+                  descargarse aquí
+                </a>
+                .
               </p>
               <h2 className="text-2xl font-semibold">
                 ¿Qué variables se tomaron en cuenta?

@@ -33,7 +33,7 @@ function Table(props) {
     setCurrentPage(currentPage);
   };
 
-  const handleCheckboxChange = (event, index) => {
+  const handleCheckboxChange = (event) => {
     const column = event.target.value;
     table.toggleColumn(column);
     table.redraw();
@@ -86,9 +86,9 @@ function Table(props) {
           </div>
         )}
         {props.paginate ? (
-          <div className="bg-tiryan-purple px-4 flex items-center">
+          <div className="bg-tiryan-purple px-4 flex flex-col md:flex-row md:items-center">
             <div className="hidden md:block md:w-1/3"></div>
-            <div className="flex space-x-6 justify-center w-1/2 md:w-1/3">
+            <div className="flex space-x-6 justify-center w-full md:w-1/3">
               <button
                 className="focus:outline-none flex items-center text-white font-bold py-2"
                 onClick={handlePreviousPage}
@@ -110,7 +110,7 @@ function Table(props) {
                 />
               </button>
             </div>
-            <div className="text-right w-1/2 md:w-1/3 space-x-2">
+            <div className="w-full md:w-1/3 space-x-2 flex flex-col items-center py-2 md:flex-row md:justify-end">
               <Link href="/">
                 <a className="text-white">Ver tabla completa</a>
               </Link>
