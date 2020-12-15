@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o docs",
+    "build": "rimraf docs && next build && next export -o docs",
     "start": "next start"
   },
   "author": "David Daza <03dazal@gmail.com>",
@@ -21,5 +21,7 @@
     "tabulator-tables": "^4.9.1",
     "tailwindcss": "^2.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
 }

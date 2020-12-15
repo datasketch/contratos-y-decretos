@@ -39,6 +39,12 @@ function useTable(el, { paginate }) {
           },
         });
       }
+      if (header === 'Enlace decreto' || header === 'Enlace Decreto') {
+        return Object.assign(columnDef, {
+          formatter: 'link',
+          formatterParams: { target: '_blank' },
+        });
+      }
       return columnDef;
     });
     let options = {

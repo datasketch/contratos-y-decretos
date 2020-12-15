@@ -43,6 +43,10 @@
     transform: translate(-50%, -50%) rotate(45deg);
   }
 
+  .tabulator {
+    @apply text-base !important;
+  }
+
   .tabulator .tabulator-footer {
     @apply hidden !important;
   }
