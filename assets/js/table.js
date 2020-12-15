@@ -59,6 +59,7 @@ function renderTable(response) {
       title: header,
       field: header,
       minWidth: 150,
+      formatter: 'textarea'
     };
     if (header === 'Semaforo' || header === 'Semáforo') {
       return Object.assign(columnDef, {

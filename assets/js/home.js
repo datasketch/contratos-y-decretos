@@ -55,6 +55,7 @@ function registerListeners(table, params) {
   columnsFilter.addEventListener('change', function (event) {
     const column = event.target.value;
     table.toggleColumn(column);
+    table.redraw();
   });
 }
 
@@ -85,14 +86,15 @@ function renderTable(response) {
     const columnDef = {
       title: header,
       field: header,
-      minWidth: 150,
+      minWidth: 270,
       visible: index < 7,
+      formatter: 'textarea',
     };
     if (header === 'Semaforo' || header === 'Semáforo') {
       return Object.assign(columnDef, {
         formatter: function (cell) {
           const imageUrl = imageMapper[cell.getValue().toLowerCase()];
-          return `<img class="h-10 mx-auto" src="${imageUrl}">`;
+          return `<img class="h-16 mx-auto" src="${imageUrl}">`;
         },
       });
     }
@@ -103,7 +105,7 @@ function renderTable(response) {
     data,
     layout: 'fitColumns',
     pagination: 'local',
-    paginationSize: 10,
+    paginationSize: 5,
   };
   const table = new Tabulator(container, options);
   const maxPages = table.getPageMax();
