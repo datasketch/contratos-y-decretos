@@ -51,6 +51,9 @@ function Table(props) {
             onInput={(e) => handleSearch(e)}
           />
         </div>
+        <p className="text-sm px-4 py-2 text-center md:hidden text-tiryan-purple">
+          Tocar la tabla y deslizar para ver más columnas
+        </p>
         <div ref={tableEl} className="text-base"></div>
         {props.columnsFilter && (
           <div className="bg-gray-200 px-4 py-3">
