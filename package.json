@@ -4,15 +4,22 @@
   "description": "Cuestión Pública",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build && next export -o docs",
+    "start": "next start"
   },
   "author": "David Daza <03dazal@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "tailwindcss": "^1.9.6"
+    "@ddazal/gsheetreader": "^2.2.0",
+    "autoprefixer": "^10.1.0",
+    "next": "^10.0.3",
+    "postcss": "^8.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "scrollama": "^2.2.1",
+    "tabulator-tables": "^4.9.1",
+    "tailwindcss": "^2.0.2"
   },
-  "devDependencies": {
-    "postcss": "^7.0.27",
-    "postcss-cli": "^7.1.0"
-  }
+  "devDependencies": {}
 }

@@ -1,5 +1,0 @@
-baseURL = "https://cuestionpublica.com/contratos-y-decretos/"
-languageCode = "es-es"
-title = "Contratos y Decretos"
-taxonomies = []
-publishDir = "public"

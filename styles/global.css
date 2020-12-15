@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Lato;
+    font-weight: 400;
+    src: url(../public/fonts/Lato-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Lato;
+    font-weight: 600;
+    src: url(../public/fonts/Lato-Semibold.ttf);
+  }
+
+  @font-face {
+    font-family: Lato;
+    font-weight: 900;
+    src: url(../public/fonts/Lato-Heavy.ttf);
+  }
+}
+
+@layer components {
+  .tabulator .tabulator-footer {
+    @apply hidden;
+  }
+
+  button[disabled] {
+    @apply cursor-not-allowed opacity-75;
+  }
+
+  .column-indicator {
+    @apply w-4 h-4 rounded bg-transparent border border-gray-700;
+  }
+
+  input[type='checkbox']:checked + label .column-indicator {
+    @apply bg-tiryan-purple relative border-tiryan-purple;
+  }
+
+  input[type='checkbox']:checked + label .column-indicator:before {
+    content: '';
+    @apply absolute h-2 w-1 border-white border-b-2 border-r-2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .tabulator-col-content {
+    @apply text-tiryan-purple text-center font-black !important;
+  }
+
+  .tabulator-row:nth-child(2n) {
+    @apply bg-gray-100 !important;
+  }
+
+  .tabulator-row {
+    border-bottom: none !important;
+  }
+
+  .tabulator-row .tabulator-cell {
+    border-right: none !important;
+  }
+
+  .tabulator-row .tabulator-cell {
+    @apply text-center !important;
+  }
+}
