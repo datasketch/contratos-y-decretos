@@ -1,9 +1,9 @@
 {{ define "main" }}
 {{ partial "intro.html" . }}
 <div class="shadow-inner">
-  <div class="py-4 flex items-center space-x-4 px-4">
+  <div class="py-4 flex items-center space-x-4 px-4 bg-gray-200">
     <img class="w-6" src="{{"media/lupa.png"|absURL}}" alt="">
-    <input class="flex-grow focus:outline-none text-lg placeholder-tiryan-purple" type="text" placeholder="Ingresa palabra clave" id="search">
+    <input class="flex-grow focus:outline-none text-lg placeholder-tiryan-purple bg-gray-200 text-tiryan-purple" type="text" placeholder="Ingresa palabra clave" id="search">
   </div>
   <div id="table" class="text-base">
   </div>
