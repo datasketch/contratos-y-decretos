@@ -1,5 +1,10 @@
 module.exports = {
-  purge: ['./pages/**/*.js', './components/**/*.js'],
+  purge: {
+    content: ['./pages/**/*.js', './components/**/*.js'],
+    options: {
+      safelist: ['h-16'],
+    },
+  },
   theme: {
     extend: {
       colors: {
