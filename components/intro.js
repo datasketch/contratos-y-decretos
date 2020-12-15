@@ -23,25 +23,25 @@ function Intro() {
     >
       <div className="bg-red-crayola fixed inline-flex md:flex-col md:top-1/2 left-0 p-2 md:space-y-1 rounded-tr-md rounded-br-md transform md:-translate-y-1/2 z-10">
         <a
-          href="https://www.facebook.com/cuestionp"
+          href="https://www.facebook.com/sharer/sharer.php?u=https://cuestionpublica.com/contratos-y-decretos&quote=Alertas de riesgo de corrupción en los decretos presidenciales"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img class="w-7" src="media/fb.png" alt="" />
+          <img className="w-7" src="media/fb.png" alt="" />
         </a>
         <a
-          href="https://twitter.com/cuestion_p"
+          href="https://twitter.com/intent/tweet?text=Alertas de riesgo de corrupción en los decretos presidenciales&url=https://cuestionpublica.com/contratos-y-decretos&via=cuestion_p"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img class="w-7" src="media/tw.png" alt="" />
+          <img className="w-7" src="media/tw.png" alt="" />
         </a>
         <a
           href="https://www.instagram.com/cuestionp/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img class="w-7" src="media/ig.png" alt="" />
+          <img className="w-7" src="media/ig.png" alt="" />
         </a>
       </div>
       <div ref={wrapper} className="sticky top-0 w-full h-screen px-4">
