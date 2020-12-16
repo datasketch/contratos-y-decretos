@@ -30,6 +30,7 @@ function Meta({
         name="twitter:image"
         content="https://res.cloudinary.com/randommonkey/image/upload/v1608049508/contratos-y-decretos/contratos-y-decretos.png"
       />
+      <link rel="icon" type="image/png" href="https://cuestionpublica.com/wp-content/uploads/2018/06/favicon-96x96-1.png"></link>
     </>
   );
 }
