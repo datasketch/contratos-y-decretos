@@ -159,7 +159,7 @@ function Intro() {
         </p>
         <div className="flex items-center justify-center space-x-2 mt-6">
           <img className="w-24" src="media/logo_cp_white.png" alt="" />
-          <img className="w-32" src="media/logo_unisabana.png" alt="" />
+          {/* <img className="w-32" src="media/logo_unisabana.png" alt="" /> */}
         </div>
       </div>
     </div>

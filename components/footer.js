@@ -122,7 +122,7 @@ function Footer() {
             <div className="leading-tight mt-3 font-normal max-w-2xl mx-auto">
               <p>
                 Estudiantes del Seminario de Datos de la Universidad de La
-                Sabana, bajo el liderazgo de la profesora{' '}
+                Sabana apoyaron únicamente la construcción de la base de daots, bajo el liderazgo de la profesora{' '}
                 <a
                   href="https://twitter.com/marisamagar"
                   className="font-black"
